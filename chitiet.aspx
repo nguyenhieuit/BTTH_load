@@ -28,6 +28,14 @@
             </div>
             <div id="chitiet">
                 <asp:Label ID="Label3" runat="server" Text='<%#Eval("MoTa") %>'></asp:Label>
+                <div>
+                    <asp:Label ID="Label4" runat="server" Text="Số lượng"></asp:Label>
+                    <asp:TextBox ID="txt_SL" runat="server"></asp:TextBox>
+                    <asp:Button ID="btn_muahang" runat="server" Text="Mua hàng" OnClick="btn_muahang_Click"  CommandArgument='<%# Eval("MaSP") %>' />
+                </div>
+                <div>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Giỏ hàng</asp:LinkButton>
+                </div>
             </div>
             
         </ItemTemplate>
